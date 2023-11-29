@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Gabarito:wght@400;800&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <title>Weather API</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <header>
+            <h1>Get the Local Weather</h1>
+            <form class="main-form">
+                <label for="search">Search the city or area</label>
+                <input type="text" placeholder="Enter ZIP Code">
+                <button type="submit" id="search-btn">Search</button>
+            </form>
+        </header>
+    </div>
+
+        <div class="weather-display">
+            <h1 class="city-name"><span>Tampa</span></h1>
+        
+            <div class="info">
+            <img src="/icons/sunny.png" alt="weather icon" id="icon">
+            <h2 class="weather-conditions" id="temp">65<sup>°F</sup></h2>
+            <p class="weather-conditions" id="description">Sunny</p>
+            <p class="weather-conditions" id="high">High</p>
+            <p class="weather-conditions" id="low">Low</p>
+        </div>
+        </div>
+    
+    <script src="/main.js"></script>
+</body>
+
+</html>

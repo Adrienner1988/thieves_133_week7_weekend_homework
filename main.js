@@ -1,43 +1,29 @@
 //DOM Objects
 const cityName = document.querySelector('.city-name');
 
-
 //image
-const imageIcon = document.querySelector('#icon');
+const weatherIconDiv = document.querySelector('.weather-icon');
 
-
-
-// main-temp
-const mainTemp = document.querySelector('#temp');
-
-
-//weather description
-const description = document.querySelector('#description');
-
-
-//main-max-high
-const highTemp = document.querySelector('#high');
-
-
-//main-max-low
-const lowTemp = document.querySelector('#low');
-
-
+//weather high/low
+const weatherConditions = document.querySelector('.weather-conditions');
 
 
 //Calling API
 const weatherApi = async (cityname) => {
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=a889a853f78d336ee0ec8ca80895b827&units=imperial`);
     const data = await response.json();
-  
 
     //parsing through the data
     cityName.textContent = data.name
-    imageIcon.src = data.weather.icon
-    mainTemp.textContent = data['main']['temp']
-    description.textContent = data['weather'][0].main
-    highTemp.textContent = data['main']['temp_max']
-    lowTemp.textContent = data['main']['temp_min']
+    weatherIconDiv.innerHTML = `
+        <img src=https://openweathermap.org/img/wn/${data.weather[0].icon}.png />
+    `
+    weatherConditions.innerHTML = `
+        <p>${data['weather'][0].main}</p>
+        <h2>${data['main']['temp']}°F</h2>
+        <p>High ${data['main']['temp_max']}°F</p>
+        <p>Low ${data['main']['temp_min']}°F</p>
+        `
 };
 
 
@@ -48,4 +34,4 @@ form.addEventListener('submit', (event) => {
     const inputValue = form[0].value;
     weatherApi(inputValue);
     form[0].value = '';
-})
+});

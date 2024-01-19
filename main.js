@@ -7,6 +7,9 @@ const weatherIconDiv = document.querySelector('.weather-icon');
 //weather high/low
 const weatherConditions = document.querySelector('.weather-conditions');
 
+// Hide weather display initially
+const weatherDisplay = document.querySelector('.weather-display');
+weatherDisplay.style.display = 'none';
 
 //Calling API
 const weatherApi = async (cityname) => {
@@ -24,6 +27,11 @@ const weatherApi = async (cityname) => {
         <p>High ${data['main']['temp_max']}°F</p>
         <p>Low ${data['main']['temp_min']}°F</p>
         `
+
+    // Show weather display after data is rendered
+    weatherDisplay.style.display = 'block';
+    
+    //need to add and error for non existing city and can't be empty to search
 };
 
 

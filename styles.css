@@ -23,6 +23,7 @@ background: linear-gradient(to top, #333399, #ff00cc);  */
     display: flex;
     justify-content: center;
     color: whitesmoke;
+    width: 90%;
 }
 
 #search-btn {

@@ -72,13 +72,13 @@ input:hover {
     padding: 10px 10px;
     margin: 100px;
     border-radius: 5px;
-    
-
+    border: 1px solid whitesmoke;
+    background-color: azure;
 }
 
 .city-name {
     text-align: center;
-    color: #000;
+    color: #333399;
     font-size: xx-large;
     font-weight: 600;
     padding-bottom: 10px;
@@ -92,7 +92,7 @@ input:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #000;
+    color: #333399;
     font-size:xx-large;
     font-weight: 600;
 }

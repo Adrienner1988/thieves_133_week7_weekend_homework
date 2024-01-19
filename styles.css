@@ -22,19 +22,21 @@ background: linear-gradient(to top, #333399, #ff00cc);  */
     padding-top: 30px;
     display: flex;
     justify-content: center;
-    color: whitesmoke;
-    width: 90%;
+    color: #18335d;
+    font-size: xx-large;
+    text-transform: uppercase;
 }
 
 #search-btn {
     border-radius: 5px;
     border: 1px solid whitesmoke;
-    color: whitesmoke;
+    color: #18335d;
     padding: 8px;
+    font-weight: 600;
 }
 
 #search-btn:hover {
-    background-color: #333399;
+    background-color: #18335d;
     color: whitesmoke;
     border: 1px solid whitesmoke;
     transition: 1s;
@@ -57,12 +59,13 @@ input[type="text"] {
 }
 
 ::placeholder {
-    color: #333399;
+    color: #18335d;
+    font-weight: 600;
 }
 
 input:focus,
 input:hover {
-    background-color: #333399;
+    background-color: #18335d;
     color: whitesmoke;
     transition: 1s;
     cursor: pointer;
@@ -74,12 +77,12 @@ input:hover {
     margin: 100px;
     border-radius: 5px;
     border: 1px solid whitesmoke;
-    background-color: azure;
+    background-color: hsl(208, 45%, 83%, .6);
 }
 
 .city-name {
     text-align: center;
-    color: #333399;
+    color: #216398;
     font-size: xx-large;
     font-weight: 600;
     padding-bottom: 10px;
@@ -93,7 +96,7 @@ input:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #333399;
+    color: #216398;
     font-size:xx-large;
     font-weight: 600;
 }

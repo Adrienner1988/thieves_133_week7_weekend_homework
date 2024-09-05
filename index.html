@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Abel&family=Gabarito:wght@400;800&family=Playfair+Display&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Gabarito:wght@400;800&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
     <title>What's the Weather?</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="main">
-        <header>
-            <h1>What's the Weather?</h1>
-            <form id="main-form">
-                <label for="search">Search the city or area</label>
-                <input type="text" name="search" id="search" placeholder="Enter City">
-                <button type="submit" id="search-btn">Search</button>
-            </form>
-        </header>
+      <header>
+        <h1 class="form-header">What's the Weather?</h1>
+        <form id="main-form">
+          <label for="search" class="search-area"
+            >Search the city or area</label
+          >
+          <div class="input-group">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Enter City"
+            />
+            <button type="submit" id="search-btn">Search</button>
+          </div>
+        </form>
+      </header>
     </div>
 
-        <div class="weather-display">
-            <h1 class="city-name"><span></span></h1>
-            <div class="weather-icon"></div>
-            <div class="info">
-                <img src="" id="icon">
-                <div class="weather-conditions"></div>
-        </div>
-        </div>
-    
-    <script src="/main.js"></script>
-</body>
+    <div class="weather-display">
+      <h1 class="city-name"><span></span></h1>
+      <div class="weather-icon"></div>
+      <div class="info">
+        <img src="" id="icon" />
+        <div class="weather-conditions"></div>
+      </div>
+    </div>
 
+    <script src="/main.js"></script>
+  </body>
 </html>

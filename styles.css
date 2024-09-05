@@ -8,9 +8,6 @@
 }
 
 body {
-    /* background: #ff00cc;  
-background: -webkit-linear-gradient(to top, #333399, #ff00cc); 
-background: linear-gradient(to top, #333399, #ff00cc);  */
     background-image: url('https://wallpapercave.com/wp/wp3980180.jpg');
     background-size: cover;
     height: 100vh;
@@ -25,6 +22,26 @@ background: linear-gradient(to top, #333399, #ff00cc);  */
     color: #18335d;
     font-size: xx-large;
     text-transform: uppercase;
+}
+
+#main-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.form-header {
+    text-align: center;
+}
+
+.search-area {
+    text-align: center;
 }
 
 #search-btn {
@@ -73,11 +90,15 @@ input:hover {
 
 /* weather display */
 .weather-display {
-    padding: 10px 10px;
-    margin: 100px;
+    width: 50vw;
+    height: 50vh;
+    max-width: 400px;
+    max-height: 400px;
+    padding: 10px;
+    margin: 75px auto;
     border-radius: 5px;
     border: 1px solid whitesmoke;
-    background-color: hsl(208, 45%, 83%, .6);
+    background-color: rgba(192, 213, 231, 0.8);
 }
 
 .city-name {
@@ -97,7 +118,7 @@ input:hover {
     align-items: center;
     justify-content: center;
     color: #216398;
-    font-size:xx-large;
+    font-size: xx-large;
     font-weight: 600;
 }
 
